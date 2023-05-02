@@ -25,3 +25,15 @@ Sétimo, digite git commit -m "Texto de sua escolha" e de o enter, em seguida di
 Muitas empresas utilizam o MAIN inves do MASTER, e iremos alterar esse nome também, é simples,
 
 Digite git branch -M "main" e de o enter, desta forma o nome mudará de MASTER  para MAIN.
+
+O proximo passo é enviar este folder para o github, porém, para isso, iremos precisar criar uma ponte entre o git bash e o github, para isso, iremos pegar o link do nosso repositorio no git hub, e no gitbash iremos escrever o seguinte comando:
+
+git remote add "nome desejado", normalmente para a primeira conexão, utilização o nome "origin",  mas pode ser o nome que desejar, isso serve para voce criar uma conexão do seu gitbash com seu github, em seguida, damos o enter, e ele irá para a pagina de baixo sem nenhuma mensagem nova.
+
+Em seguida, escreva git push -u "nome desejado" main, utilizado para empurrar "push" o arquivo para dentro do github, lembrando que cada conexão levará um nome diferente.
+
+Vamos para a proxima fase, iremos realizar agora o versionamento, iremos realizar uma alteração no file e criar um novo file dentro do folder projeto git, a alteração, fica por sua conta, com o tempo, voce deverá realizar um novo codigo, ou corrigir algo, e irá utilizar o versionamento para enviar ao github novamente, então, vamos aprender está questão.
+remos começar novamente pelos comandos do git, iniciando-se pelo git add, como neste momento temos mais de um arquivo, e imaginando que logo, estaremos com dezenas de arquivos abertos, não precisamos escrever um por um, podemos apenas colocar um ponto, desta forma, iremos estar selecionando todos as files juntas, então, o codigo ficará do seguinte jeito, git add .
+
+Logo verá, que irá aparecer em verde que foi criado uma nova file em vermelho, os arquivos que foram modificados.
+Depois deste passo, iremos utilizar o git commit -m "frase de sua preferencia" e dar o enter, lembrando que, a frase tem que ser objetiva para o proximo que ver o codigo, ou até mesmo voce, poder entender o que foi modificado.
